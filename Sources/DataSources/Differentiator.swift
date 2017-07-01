@@ -705,7 +705,9 @@ fileprivate struct CommandGenerator<S: AnimatableSectionModelType> {
         }
 
         // sections should be in place, but items should be original without deleted ones
-        let sectionsAfterChange: [S] = try self.finalSections.enumerated().map { i, s -> S in
+		let sectionsAfterChange = try self.finalSections.enumerated().map { tuple -> S in
+			let i = tuple.0
+			let s = tuple.1
             let event = self.finalSectionData[i].event
             
             if event == .inserted {

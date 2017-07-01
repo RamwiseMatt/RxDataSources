@@ -160,16 +160,16 @@ open class CollectionViewSectionedDataSource<S: SectionModelType>
         
         super.init()
         
-        self.configureCell = { [weak self] _ in
-            precondition(false, "There is a minor problem. `cellFactory` property on \(self!) was not set. Please set it manually, or use one of the `rx_bindTo` methods.")
-            
-            return (nil as UICollectionViewCell!)!
-        }
-        
-        self.supplementaryViewFactory = { [weak self] _ in
-            precondition(false, "There is a minor problem. `supplementaryViewFactory` property on \(self!) was not set.")
-            return (nil as UICollectionReusableView?)!
-        }
+//        self.configureCell = { [weak self] _ in
+//            precondition(false, "There is a minor problem. `cellFactory` property on \(self!) was not set. Please set it manually, or use one of the `rx_bindTo` methods.")
+//            
+//            return (nil as UICollectionViewCell!)!
+//        }
+//        
+//        self.supplementaryViewFactory = { [weak self] _ in
+//            precondition(false, "There is a minor problem. `supplementaryViewFactory` property on \(self!) was not set.")
+//            return (nil as UICollectionReusableView?)!
+//        }
     }
     
     // UICollectionViewDataSource
