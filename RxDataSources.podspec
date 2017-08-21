@@ -40,6 +40,6 @@ data
 
   s.source_files          = 'Sources/**/*.swift'
 
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+  s.dependency 'RxSwift', '~> 4.0.0-alpha.1'
+  s.dependency 'RxCocoa', '~> 4.0.0-alpha.1'
 end
